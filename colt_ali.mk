@@ -16,15 +16,16 @@
 # Inherit from ali device
 $(call inherit-product, device/motorola/ali/device.mk)
 
-# Inherit some common Pixel Experience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Colt stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1080x2160
+COLT_BUILD_TYPE := OFFICIAL
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := aosp_ali
+PRODUCT_NAME := colt_ali
 PRODUCT_DEVICE := ali
 PRODUCT_MODEL := moto g(6)
 
