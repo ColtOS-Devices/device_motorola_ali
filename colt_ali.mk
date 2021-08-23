@@ -21,6 +21,7 @@ $(call inherit-product, vendor/colt/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_BOOT_ANIMATION_RES := 1080x2160
 COLT_BUILD_TYPE := OFFICIAL
+COLT_BUILD_MAINTAINER := BrunoRolak
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := motorola
